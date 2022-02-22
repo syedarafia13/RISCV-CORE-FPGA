@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35ticsg324-1L" LaunchTime="1638869037">
+  <File Type="PA-TCL" Name="top.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="top_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="top_reports.tcl"/>
+  <File Type="RDS-RDS" Name="top.vds"/>
+  <File Type="RDS-UTIL" Name="top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="top_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="top.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="top_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="top_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/top/core/alu.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/Nameer Iqbal Ansari/OneDrive/Desktop/top/core/alu.sv"/>
+        <Attr Name="ImportTime" Val="1638861510"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/top/core/alu_ctrl.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/Nameer Iqbal Ansari/OneDrive/Desktop/top/core/alu_ctrl.sv"/>
+        <Attr Name="ImportTime" Val="1638863115"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/top/core/branches.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/Nameer Iqbal Ansari/OneDrive/Desktop/top/core/branches.sv"/>
+        <Attr Name="ImportTime" Val="1634840980"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/top/core/ctrl_unit.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/Nameer Iqbal Ansari/OneDrive/Desktop/top/core/ctrl_unit.sv"/>
+        <Attr Name="ImportTime" Val="1638861554"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/top/core/data_mem.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/Nameer Iqbal Ansari/OneDrive/Desktop/top/core/data_mem.sv"/>
+        <Attr Name="ImportTime" Val="1638789495"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/top/core/imm_gen.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/Nameer Iqbal Ansari/OneDrive/Desktop/top/core/imm_gen.sv"/>
+        <Attr Name="ImportTime" Val="1638861641"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/top/core/instr_mem.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/Nameer Iqbal Ansari/OneDrive/Desktop/top/core/instr_mem.sv"/>
+        <Attr Name="ImportTime" Val="1638798732"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/top/core/reg_file.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/Nameer Iqbal Ansari/OneDrive/Desktop/top/core/reg_file.sv"/>
+        <Attr Name="ImportTime" Val="1638447845"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/top/core/top.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/Nameer Iqbal Ansari/OneDrive/Desktop/top/core/top.sv"/>
+        <Attr Name="ImportTime" Val="1638865391"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/top/inst.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/Nameer Iqbal Ansari/OneDrive/Desktop/top/inst.mem"/>
+        <Attr Name="ImportTime" Val="1638536567"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="top"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/rafiaxdc.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
+</GenRun>

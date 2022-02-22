@@ -1,0 +1,115 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Tue Dec  7 14:40:47 2021
+| Host         : DESKTOP-0G45RDQ running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a35ti
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    50 |
+| Unused register locations in slices containing registers |     0 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      8 |            1 |
+|    16+ |           49 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             152 |           44 |
+| Yes          | No                    | No                     |            1992 |          639 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------+---------------------------------+------------------+------------------+----------------+
+|      Clock Signal      |          Enable Signal          | Set/Reset Signal | Slice Load Count | Bel Load Count |
++------------------------+---------------------------------+------------------+------------------+----------------+
+|  clk_wiz/inst/clk_out1 | i_mem/reg_write                 |                  |                4 |              8 |
+|  clk_wiz/inst/clk_out1 | i_mem/reg_array_reg[22][31][0]  |                  |               22 |             64 |
+|  clk_wiz/inst/clk_out1 | i_mem/reg_array_reg[23][31][0]  |                  |               23 |             64 |
+|  clk_wiz/inst/clk_out1 | i_mem/reg_array_reg[24][31][0]  |                  |               20 |             64 |
+|  clk_wiz/inst/clk_out1 | i_mem/reg_array_reg[25][31][0]  |                  |               19 |             64 |
+|  clk_wiz/inst/clk_out1 | i_mem/reg_array_reg[26][31][0]  |                  |               20 |             64 |
+|  clk_wiz/inst/clk_out1 | i_mem/reg_array_reg[1][31]_4[0] |                  |               22 |             64 |
+|  clk_wiz/inst/clk_out1 | i_mem/reg_array_reg[16][31][0]  |                  |               19 |             64 |
+|  clk_wiz/inst/clk_out1 | i_mem/reg_array_reg[29][31][0]  |                  |               19 |             64 |
+|  clk_wiz/inst/clk_out1 | i_mem/reg_array_reg[9][31][0]   |                  |               24 |             64 |
+|  clk_wiz/inst/clk_out1 | i_mem/reg_array_reg[31][31][0]  |                  |               22 |             64 |
+|  clk_wiz/inst/clk_out1 | i_mem/reg_array_reg[30][31][0]  |                  |               20 |             64 |
+|  clk_wiz/inst/clk_out1 | i_mem/reg_array_reg[2][31][0]   |                  |               20 |             64 |
+|  clk_wiz/inst/clk_out1 | i_mem/reg_array_reg[7][31][0]   |                  |               28 |             64 |
+|  clk_wiz/inst/clk_out1 | i_mem/reg_array_reg[5][31][0]   |                  |               22 |             64 |
+|  clk_wiz/inst/clk_out1 | i_mem/reg_array_reg[3][31][0]   |                  |               20 |             64 |
+|  clk_wiz/inst/clk_out1 | i_mem/reg_array_reg[27][31][0]  |                  |               18 |             64 |
+|  clk_wiz/inst/clk_out1 | i_mem/reg_array_reg[8][31][0]   |                  |               24 |             64 |
+|  clk_wiz/inst/clk_out1 | i_mem/reg_array_reg[6][31][0]   |                  |               21 |             64 |
+|  clk_wiz/inst/clk_out1 | i_mem/E[0]                      |                  |               18 |             64 |
+|  clk_wiz/inst/clk_out1 | i_mem/reg_array_reg[12][31][0]  |                  |               16 |             64 |
+|  clk_wiz/inst/clk_out1 | i_mem/reg_array_reg[10][31][0]  |                  |               16 |             64 |
+|  clk_wiz/inst/clk_out1 | i_mem/reg_array_reg[13][31][0]  |                  |               14 |             64 |
+|  clk_wiz/inst/clk_out1 | i_mem/reg_array_reg[14][31][0]  |                  |               20 |             64 |
+|  clk_wiz/inst/clk_out1 | i_mem/reg_array_reg[15][31][0]  |                  |               20 |             64 |
+|  clk_wiz/inst/clk_out1 | i_mem/reg_array_reg[4][31][0]   |                  |               23 |             64 |
+|  clk_wiz/inst/clk_out1 | i_mem/reg_array_reg[17][31][0]  |                  |               23 |             64 |
+|  clk_wiz/inst/clk_out1 | i_mem/reg_array_reg[18][31][0]  |                  |               24 |             64 |
+|  clk_wiz/inst/clk_out1 | i_mem/reg_array_reg[11][31][0]  |                  |               14 |             64 |
+|  clk_wiz/inst/clk_out1 | i_mem/reg_array_reg[19][31][0]  |                  |               22 |             64 |
+|  clk_wiz/inst/clk_out1 | i_mem/reg_array_reg[20][31][0]  |                  |               22 |             64 |
+|  clk_wiz/inst/clk_out1 | i_mem/reg_array_reg[21][31][0]  |                  |               20 |             64 |
+|  clk_wiz/inst/clk_out1 |                                 | p_0_in           |               44 |            152 |
+|  clk_wiz/inst/clk_out1 | i_mem/reg_array_reg[1][0]_1     |                  |               32 |            256 |
+|  clk_wiz/inst/clk_out1 | i_mem/reg_array_reg[1][0]_13    |                  |               32 |            256 |
+|  clk_wiz/inst/clk_out1 | i_mem/reg_array_reg[1][0]_14    |                  |               32 |            256 |
+|  clk_wiz/inst/clk_out1 | i_mem/reg_array_reg[1][0]       |                  |               32 |            256 |
+|  clk_wiz/inst/clk_out1 | i_mem/reg_array_reg[1][0]_0     |                  |               32 |            256 |
+|  clk_wiz/inst/clk_out1 | i_mem/reg_array_reg[1][0]_10    |                  |               32 |            256 |
+|  clk_wiz/inst/clk_out1 | i_mem/reg_array_reg[1][0]_11    |                  |               32 |            256 |
+|  clk_wiz/inst/clk_out1 | i_mem/reg_array_reg[1][0]_12    |                  |               32 |            256 |
+|  clk_wiz/inst/clk_out1 | i_mem/reg_array_reg[1][0]_8     |                  |               32 |            256 |
+|  clk_wiz/inst/clk_out1 | i_mem/reg_array_reg[1][0]_7     |                  |               32 |            256 |
+|  clk_wiz/inst/clk_out1 | i_mem/reg_array_reg[1][0]_6     |                  |               32 |            256 |
+|  clk_wiz/inst/clk_out1 | i_mem/reg_array_reg[1][0]_2     |                  |               32 |            256 |
+|  clk_wiz/inst/clk_out1 | i_mem/reg_array_reg[1][0]_4     |                  |               32 |            256 |
+|  clk_wiz/inst/clk_out1 | i_mem/reg_array_reg[1][0]_3     |                  |               32 |            256 |
+|  clk_wiz/inst/clk_out1 | i_mem/reg_array_reg[1][0]_5     |                  |               32 |            256 |
+|  clk_wiz/inst/clk_out1 | i_mem/reg_array_reg[1][0]_9     |                  |               32 |            256 |
+|  clk_wiz/inst/clk_out1 |                                 |                  |              704 |           5632 |
++------------------------+---------------------------------+------------------+------------------+----------------+
+
+

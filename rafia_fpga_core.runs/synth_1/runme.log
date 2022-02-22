@@ -1,0 +1,511 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a35ticsg324-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2520 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 443.562 ; gain = 97.703
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [E:/fpga tests/rafia_fpga_core/rafia_fpga_core.srcs/sources_1/imports/top/core/top.sv:4]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [E:/fpga tests/rafia_fpga_core/rafia_fpga_core.runs/synth_1/.Xil/Vivado-8216-DESKTOP-0G45RDQ/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [E:/fpga tests/rafia_fpga_core/rafia_fpga_core.runs/synth_1/.Xil/Vivado-8216-DESKTOP-0G45RDQ/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'instr_mem' [E:/fpga tests/rafia_fpga_core/rafia_fpga_core.srcs/sources_1/imports/top/core/instr_mem.sv:32]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter MEM_DEPTH bound to: 4096 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'inst.mem' is read successfully [E:/fpga tests/rafia_fpga_core/rafia_fpga_core.srcs/sources_1/imports/top/core/instr_mem.sv:49]
+INFO: [Synth 8-6155] done synthesizing module 'instr_mem' (2#1) [E:/fpga tests/rafia_fpga_core/rafia_fpga_core.srcs/sources_1/imports/top/core/instr_mem.sv:32]
+INFO: [Synth 8-6157] synthesizing module 'ctrl_unit' [E:/fpga tests/rafia_fpga_core/rafia_fpga_core.srcs/sources_1/imports/top/core/ctrl_unit.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'ctrl_unit' (3#1) [E:/fpga tests/rafia_fpga_core/rafia_fpga_core.srcs/sources_1/imports/top/core/ctrl_unit.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'reg_file' [E:/fpga tests/rafia_fpga_core/rafia_fpga_core.srcs/sources_1/imports/top/core/reg_file.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'reg_file' (4#1) [E:/fpga tests/rafia_fpga_core/rafia_fpga_core.srcs/sources_1/imports/top/core/reg_file.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'imm_gen' [E:/fpga tests/rafia_fpga_core/rafia_fpga_core.srcs/sources_1/imports/top/core/imm_gen.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'imm_gen' (5#1) [E:/fpga tests/rafia_fpga_core/rafia_fpga_core.srcs/sources_1/imports/top/core/imm_gen.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'alu_ctrl' [E:/fpga tests/rafia_fpga_core/rafia_fpga_core.srcs/sources_1/imports/top/core/alu_ctrl.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'alu_ctrl' (6#1) [E:/fpga tests/rafia_fpga_core/rafia_fpga_core.srcs/sources_1/imports/top/core/alu_ctrl.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'alu' [E:/fpga tests/rafia_fpga_core/rafia_fpga_core.srcs/sources_1/imports/top/core/alu.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (7#1) [E:/fpga tests/rafia_fpga_core/rafia_fpga_core.srcs/sources_1/imports/top/core/alu.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'data_mem' [E:/fpga tests/rafia_fpga_core/rafia_fpga_core.srcs/sources_1/imports/top/core/data_mem.sv:29]
+INFO: [Synth 8-6155] done synthesizing module 'data_mem' (8#1) [E:/fpga tests/rafia_fpga_core/rafia_fpga_core.srcs/sources_1/imports/top/core/data_mem.sv:29]
+INFO: [Synth 8-6157] synthesizing module 'branches' [E:/fpga tests/rafia_fpga_core/rafia_fpga_core.srcs/sources_1/imports/top/core/branches.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'branches' (9#1) [E:/fpga tests/rafia_fpga_core/rafia_fpga_core.srcs/sources_1/imports/top/core/branches.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'top' (10#1) [E:/fpga tests/rafia_fpga_core/rafia_fpga_core.srcs/sources_1/imports/top/core/top.sv:4]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 500.316 ; gain = 154.457
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 500.316 ; gain = 154.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 500.316 ; gain = 154.457
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/fpga tests/rafia_fpga_core/rafia_fpga_core.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_wiz'
+Finished Parsing XDC File [e:/fpga tests/rafia_fpga_core/rafia_fpga_core.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_wiz'
+Parsing XDC File [E:/fpga tests/rafia_fpga_core/rafia_fpga_core.srcs/constrs_1/new/rafiaxdc.xdc]
+Finished Parsing XDC File [E:/fpga tests/rafia_fpga_core/rafia_fpga_core.srcs/constrs_1/new/rafiaxdc.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/fpga tests/rafia_fpga_core/rafia_fpga_core.srcs/constrs_1/new/rafiaxdc.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 840.094 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 840.094 ; gain = 494.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticsg324-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 840.094 ; gain = 494.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clock. (constraint file  {e:/fpga tests/rafia_fpga_core/rafia_fpga_core.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc}, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clock. (constraint file  {e:/fpga tests/rafia_fpga_core/rafia_fpga_core.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc}, line 4).
+Applied set_property DONT_TOUCH = true for clk_wiz. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 840.094 ; gain = 494.234
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5587] ROM size for "alu_op" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "reg_write" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "branch" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "store" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "load" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "op_a" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "op_b" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "pc_sel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "imm_sel" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "reg_array_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_array_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_array_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_array_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_array_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_array_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_array_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_array_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_array_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_array_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_array_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_array_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_array_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_array_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_array_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_array_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_array_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_array_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_array_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_array_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_array_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_array_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_array_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_array_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_array_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_array_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_array_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_array_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_array_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_array_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "reg_array_reg[31]" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 840.094 ; gain = 494.234
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 5     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 34    
++---RAMs : 
+	             128K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   4 Input     32 Bit        Muxes := 3     
+	  38 Input      4 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 2     
+	  10 Input      2 Bit        Muxes := 2     
+	  10 Input      1 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 31    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 2     
+Module instr_mem 
+Detailed RTL Component Info : 
++---RAMs : 
+	             128K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module ctrl_unit 
+Detailed RTL Component Info : 
++---Muxes : 
+	  10 Input      3 Bit        Muxes := 2     
+	  10 Input      2 Bit        Muxes := 2     
+	  10 Input      1 Bit        Muxes := 5     
+Module reg_file 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 33    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 31    
+Module imm_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module alu_ctrl 
+Detailed RTL Component Info : 
++---Muxes : 
+	  38 Input      4 Bit        Muxes := 1     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5587] ROM size for "cu/alu_op" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "cu/reg_write" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "cu/branch" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cu/store" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cu/load" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "cu/op_a" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "cu/op_b" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "cu/pc_sel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "cu/imm_sel" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-3886] merging instance 'rf/reg_array_reg[0][31]' (FDRE) to 'rf/reg_array_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'rf/reg_array_reg[0][30]' (FDRE) to 'rf/reg_array_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'rf/reg_array_reg[0][29]' (FDRE) to 'rf/reg_array_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'rf/reg_array_reg[0][28]' (FDRE) to 'rf/reg_array_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'rf/reg_array_reg[0][27]' (FDRE) to 'rf/reg_array_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'rf/reg_array_reg[0][26]' (FDRE) to 'rf/reg_array_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'rf/reg_array_reg[0][25]' (FDRE) to 'rf/reg_array_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'rf/reg_array_reg[0][24]' (FDRE) to 'rf/reg_array_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'rf/reg_array_reg[0][23]' (FDRE) to 'rf/reg_array_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'rf/reg_array_reg[0][22]' (FDRE) to 'rf/reg_array_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'rf/reg_array_reg[0][21]' (FDRE) to 'rf/reg_array_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'rf/reg_array_reg[0][20]' (FDRE) to 'rf/reg_array_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'rf/reg_array_reg[0][19]' (FDRE) to 'rf/reg_array_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'rf/reg_array_reg[0][18]' (FDRE) to 'rf/reg_array_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'rf/reg_array_reg[0][17]' (FDRE) to 'rf/reg_array_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'rf/reg_array_reg[0][16]' (FDRE) to 'rf/reg_array_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'rf/reg_array_reg[0][15]' (FDRE) to 'rf/reg_array_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'rf/reg_array_reg[0][14]' (FDRE) to 'rf/reg_array_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'rf/reg_array_reg[0][13]' (FDRE) to 'rf/reg_array_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'rf/reg_array_reg[0][12]' (FDRE) to 'rf/reg_array_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'rf/reg_array_reg[0][11]' (FDRE) to 'rf/reg_array_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'rf/reg_array_reg[0][10]' (FDRE) to 'rf/reg_array_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'rf/reg_array_reg[0][9]' (FDRE) to 'rf/reg_array_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'rf/reg_array_reg[0][8]' (FDRE) to 'rf/reg_array_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'rf/reg_array_reg[0][7]' (FDRE) to 'rf/reg_array_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'rf/reg_array_reg[0][6]' (FDRE) to 'rf/reg_array_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'rf/reg_array_reg[0][5]' (FDRE) to 'rf/reg_array_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'rf/reg_array_reg[0][4]' (FDRE) to 'rf/reg_array_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'rf/reg_array_reg[0][0]' (FDRE) to 'rf/reg_array_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'rf/reg_array_reg[0][1]' (FDRE) to 'rf/reg_array_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'rf/reg_array_reg[0][2]' (FDRE) to 'rf/reg_array_reg[0][3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\rf/reg_array_reg[0][3] )
+WARNING: [Synth 8-3332] Sequential element (rf/reg_array_reg[0][3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rf/out_reg[31]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rf/out_reg[30]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rf/out_reg[29]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rf/out_reg[28]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rf/out_reg[27]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rf/out_reg[26]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rf/out_reg[25]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rf/out_reg[24]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rf/out_reg[23]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rf/out_reg[22]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rf/out_reg[21]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rf/out_reg[20]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rf/out_reg[19]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rf/out_reg[18]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rf/out_reg[17]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rf/out_reg[16]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rf/out_reg[15]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rf/out_reg[14]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rf/out_reg[13]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rf/out_reg[12]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rf/out_reg[11]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rf/out_reg[10]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rf/out_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rf/out_reg[8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rf/out_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rf/out_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rf/out_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (rf/out_reg[4]) is unused and will be removed from module top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:08:35 ; elapsed = 00:08:44 . Memory (MB): peak = 840.094 ; gain = 494.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+----------------+-----------+----------------------+--------------------------------+
+|Module Name | RTL Object     | Inference | Size (Depth x Width) | Primitives                     | 
++------------+----------------+-----------+----------------------+--------------------------------+
+|top         | i_mem/sram_reg | Implied   | 4 K x 32             | RAM64X1D x 128  RAM64M x 640   | 
+|top         | d_mem/mem_reg  | Implied   | 4 K x 32             | RAM256X1S x 512                | 
++------------+----------------+-----------+----------------------+--------------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_wiz/clk_out1' to pin 'clk_wiz/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:08:50 ; elapsed = 00:09:00 . Memory (MB): peak = 840.094 ; gain = 494.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:13:27 ; elapsed = 00:13:40 . Memory (MB): peak = 1020.852 ; gain = 674.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+----------------+-----------+----------------------+--------------------------------+
+|Module Name | RTL Object     | Inference | Size (Depth x Width) | Primitives                     | 
++------------+----------------+-----------+----------------------+--------------------------------+
+|top         | i_mem/sram_reg | Implied   | 4 K x 32             | RAM64X1D x 128  RAM64M x 640   | 
+|top         | d_mem/mem_reg  | Implied   | 4 K x 32             | RAM256X1S x 512                | 
++------------+----------------+-----------+----------------------+--------------------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:13:31 ; elapsed = 00:13:44 . Memory (MB): peak = 1020.852 ; gain = 674.992
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:13:34 ; elapsed = 00:13:47 . Memory (MB): peak = 1020.852 ; gain = 674.992
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:13:34 ; elapsed = 00:13:47 . Memory (MB): peak = 1020.852 ; gain = 674.992
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:13:35 ; elapsed = 00:13:48 . Memory (MB): peak = 1020.852 ; gain = 674.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:13:35 ; elapsed = 00:13:48 . Memory (MB): peak = 1020.852 ; gain = 674.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:13:35 ; elapsed = 00:13:48 . Memory (MB): peak = 1020.852 ; gain = 674.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:13:35 ; elapsed = 00:13:48 . Memory (MB): peak = 1020.852 ; gain = 674.992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |clk_wiz_0 |     1|
+|2     |CARRY4    |    66|
+|3     |LUT1      |     4|
+|4     |LUT2      |   218|
+|5     |LUT3      |    38|
+|6     |LUT4      |   134|
+|7     |LUT5      |   232|
+|8     |LUT6      |  1730|
+|9     |MUXF7     |   576|
+|10    |MUXF8     |   134|
+|11    |RAM256X1S |   512|
+|12    |RAM64M    |   640|
+|13    |RAM64X1D  |   128|
+|14    |FDRE      |  1072|
+|15    |IBUF      |     1|
+|16    |OBUF      |     4|
++------+----------+------+
+
+Report Instance Areas: 
++------+-----------+----------+------+
+|      |Instance   |Module    |Cells |
++------+-----------+----------+------+
+|1     |top        |          |  5491|
+|2     |  alu      |alu       |    30|
+|3     |  branches |branches  |     4|
+|4     |  d_mem    |data_mem  |   771|
+|5     |  i_mem    |instr_mem |  2612|
+|6     |  ig       |imm_gen   |    61|
+|7     |  rf       |reg_file  |  1929|
++------+-----------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:13:35 ; elapsed = 00:13:48 . Memory (MB): peak = 1020.852 ; gain = 674.992
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 29 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:13:20 ; elapsed = 00:13:37 . Memory (MB): peak = 1020.852 ; gain = 335.215
+Synthesis Optimization Complete : Time (s): cpu = 00:13:35 ; elapsed = 00:13:49 . Memory (MB): peak = 1020.852 ; gain = 674.992
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2057 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1280 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 512 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 640 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 128 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+116 Infos, 29 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:13:44 ; elapsed = 00:13:59 . Memory (MB): peak = 1020.852 ; gain = 686.523
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'E:/fpga tests/rafia_fpga_core/rafia_fpga_core.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.497 . Memory (MB): peak = 1020.852 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Dec  7 14:38:14 2021...
